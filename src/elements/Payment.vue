@@ -17,7 +17,7 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { loadStripe } from '@stripe/stripe-js/dist/pure.esm.js';
 import { isSecureHost } from '../utils';
 import {

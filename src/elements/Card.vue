@@ -17,16 +17,18 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 import { loadStripe } from '@stripe/stripe-js/dist/pure.esm.js';
 import { isSecureHost } from '../utils';
+import Vue, { PropType } from 'vue';
 import {
   DEFAULT_ELEMENT_STYLE,
   STRIPE_PARTNER_DETAILS,
   INSECURE_HOST_ERROR_MESSAGE,
 } from '../constants';
 const ELEMENT_TYPE = 'card';
-export default {
+
+export default Vue.extend({
   props: {
     pk: {
       type: String,
@@ -239,7 +241,7 @@ export default {
       this.$emit('element-click', e);
     },
   },
-};
+});
 </script>
 
 <style scoped>

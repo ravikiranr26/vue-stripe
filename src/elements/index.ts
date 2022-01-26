@@ -3,7 +3,7 @@ import { STRIPE_PARTNER_DETAILS } from '../constants';
  * @deprecated - This can be achieved by using the Stripe plugin.
  */
 export default {
-  async install (Vue, options) {
+  async install (Vue: any, options: any) {
     const {
       pk,
       stripeAccount,

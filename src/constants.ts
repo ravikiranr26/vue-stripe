@@ -1,3 +1,5 @@
+const version = process.env.npm_package_version;
+
 export const STRIPE_JS_SDK_URL = 'https://js.stripe.com';
 
 export const SUPPORTED_ELEMENT_TYPE = [
@@ -102,7 +104,7 @@ export const DEFAULT_ELEMENT_STYLE = {
   },
 };
 
-export const VUE_STRIPE_VERSION = require('../package.json').version;
+export const VUE_STRIPE_VERSION = version;
 
 export const STRIPE_PARTNER_DETAILS = {
   name: 'vue-stripe',
